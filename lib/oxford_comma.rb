@@ -6,6 +6,8 @@ def oxford_comma(array)
         output.concat("and #{el}")
       else
         output.concat("#{el},")
+      end
+    end
   elsif array.length == 2 
     output = "#{array[0]} and #{array[1]}"
   elsif array.length == 1
