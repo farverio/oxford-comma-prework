@@ -3,9 +3,9 @@ def oxford_comma(array)
   if array.length > 2
     array.each_with_index do |el, i|
       if i == array.length - 1 
-        output.concat("and #{el}")
+        output.concat(" and #{el}")
       else
-        output.concat("#{el},")
+        output.concat(" #{el},")
       end
     end
   elsif array.length == 2 
